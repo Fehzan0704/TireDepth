@@ -1,0 +1,279 @@
+import os
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset
+from torchvision import models, transforms
+from PIL import Image
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+from torchvision.models import resnet34, ResNet34_Weights
+
+
+model_name = "single_angle_model_v10"
+num_epochs = 100
+batch_size = 16
+learning_rate = 0.0001
+
+# Dataset Class
+class TireDataset(Dataset):
+    def __init__(self, image_paths, depths, mask_paths, transform=None):
+        self.image_paths = image_paths
+        self.depths = depths
+        self.mask_paths = mask_paths
+        self.transform = transform
+        self.valid_indices = []
+        self.invalid_indices = []
+
+        for i in range(len(self.image_paths)):
+            if not os.path.exists(self.image_paths[i]) or not os.path.exists(self.mask_paths[i]):
+                self.invalid_indices.append(i)
+            else:
+                self.valid_indices.append(i)
+
+    def __len__(self):
+        return len(self.valid_indices)
+
+    def __getitem__(self, idx):
+        actual_idx = self.valid_indices[idx]
+        image_path = self.image_paths[actual_idx]
+        mask_path = self.mask_paths[actual_idx]
+
+        image = Image.open(image_path).convert('RGB')
+        mask = Image.open(mask_path).convert('L')
+
+        depth = self.depths.iloc[actual_idx]
+
+        if self.transform:
+            image = self.transform(image)
+            mask = self.transform(mask)
+
+        mask = (mask > 0).float()
+        if len(mask.shape) == 2:
+            mask = mask.unsqueeze(0)
+
+        image = torch.cat((image, mask), dim=0)
+
+        return image, torch.tensor([depth], dtype=torch.float), mask
+
+# Load and split dataset
+dataset_folder = '/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Dataset/Single angle - training_validation'
+excel_file = '/content/drive/MyDrive/Bachelorprosjekt - Continental/Conti - Final folder/Datasett.xlsx'
+mask_folder = '/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Mask generation/Generated masks'
+
+df = pd.read_excel(os.path.join(dataset_folder, excel_file))
+train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
+
+train_dataset = TireDataset(
+    [os.path.join(dataset_folder, img) for img in train_df["Bilde"]],
+    train_df["Dybde (mm)"],
+    [os.path.join(mask_folder, img) for img in train_df["Bilde"]],
+    transform=transforms.Compose([transforms.Resize((1024, 1024)), transforms.ToTensor()])
+)
+
+val_dataset = TireDataset(
+    [os.path.join(dataset_folder, img) for img in val_df["Bilde"]],
+    val_df["Dybde (mm)"],
+    [os.path.join(mask_folder, img) for img in val_df["Bilde"]],
+    transform=transforms.Compose([transforms.Resize((1024, 1024)), transforms.ToTensor()])
+)
+
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=int(batch_size / 2), shuffle=False)
+
+# Print valid and invalid entry counts based on Excel file.
+print(f'Train dataset: {len(train_dataset.valid_indices)} valid entries, {len(train_dataset.invalid_indices)} invalid entries')
+print(f'Validation dataset: {len(val_dataset.valid_indices)} valid entries, {len(val_dataset.invalid_indices)} invalid entries')
+
+class SimpleDepthEstimator(nn.Module):
+    def __init__(self):
+        super(SimpleDepthEstimator, self).__init__()
+        # Load a pre-trained ResNet-34 using the new weights parameter
+        self.features = models.resnet34(weights=ResNet34_Weights.DEFAULT)
+
+        # Customizing the first layer to accept 4 channels
+        original_first_layer = self.features.conv1
+        new_first_layer = nn.Conv2d(4, 64, kernel_size=7, stride=2, padding=3, bias=False)
+        with torch.no_grad():
+            new_first_layer.weight[:, :3, :, :] = original_first_layer.weight.clone()  # Copy weights for RGB channels
+            new_first_layer.weight[:, 3, :, :] = original_first_layer.weight[:, 0, :, :].clone()  # Initialize weights for the mask channel
+
+        self.features.conv1 = new_first_layer
+
+        # Removing the fully connected layer (ResNet uses 512 features before the FC layer in ResNet-34)
+        self.features.fc = nn.Identity()
+
+        # Dropout layer
+        self.dropout = nn.Dropout(0.5)
+
+        # Custom depth estimation layers
+        self.depth_layers = nn.Sequential(
+            nn.Linear(512, 256),  # Change this from 2048 to 512
+            nn.ReLU(),
+            self.dropout,
+            nn.Linear(256, 1)
+        )
+
+    def forward(self, x):
+        x = self.features(x)
+        x = x.view(x.size(0), -1)
+        x = self.depth_layers(x)
+        return x
+model = SimpleDepthEstimator()
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+print(f"\nCurrently utilizing: {device}")
+
+class WeightedMSELoss(nn.Module):
+    def __init__(self, masked_weight=100):
+        super(WeightedMSELoss, self).__init__()
+        self.mse_loss = nn.MSELoss(reduction='none')
+        self.masked_weight = masked_weight  # Higher weight for masked regions
+
+    def forward(self, outputs, targets, masks):
+        loss = self.mse_loss(outputs, targets)
+        # Create a weight matrix that has higher weights where mask is 1
+        weights = masks.view(masks.size(0), -1).mean(dim=1)
+        weights = torch.where(weights > 0, self.masked_weight, 1.0)
+        weighted_loss = loss.squeeze() * weights
+        return weighted_loss.mean()
+
+
+criterion = WeightedMSELoss()
+
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', factor=0.5, patience=5)
+
+# Training and Validation Loop
+train_losses = []
+val_losses = []
+actual_depths = []
+predicted_depths = []
+difference_depths = []
+
+for epoch in range(num_epochs):
+    print(f'=========================================================================\n\nStarting Epoch {epoch+1}/{num_epochs}\n')
+    model.train()
+    train_loss_accum = 0
+    for batch_idx, (images, depths, masks) in enumerate(train_loader):
+        images, depths, masks = images.to(device), depths.to(device), masks.to(device)
+        optimizer.zero_grad()
+        outputs = model(images)
+
+        loss = criterion(outputs, depths, masks)
+        loss.backward()
+        optimizer.step()
+        train_loss_accum += loss.item()
+
+        if (batch_idx + 1) % 5 == 0 or (batch_idx + 1) == 1:
+          print(f'Epoch {epoch+1}, Batch {batch_idx+1}/{len(train_loader)}, Train Loss: {loss.item():.4f}')
+
+    average_train_loss = train_loss_accum / len(train_loader)
+    train_losses.append(average_train_loss)
+    print(f'\n\033[1mEpoch {epoch+1}, Average Train Loss: {average_train_loss:.4f}\033[0m\n')
+
+    model.eval()
+    val_loss_accum = 0
+    for batch_idx, (images, depths, masks) in enumerate(val_loader):
+        images, depths, masks = images.to(device), depths.to(device), masks.to(device)
+        with torch.no_grad():
+            outputs = model(images)
+
+            loss = criterion(outputs, depths, masks)
+        val_loss_accum += loss.item()
+
+        if (batch_idx + 1) % 3 == 0 or (batch_idx + 1) == 1:
+          print(f'Epoch {epoch+1}, Validation Batch {batch_idx+1}/{len(val_loader)}, Validation Loss: {loss.item():.4f}')
+
+        if batch_idx == 0:
+            # Saliency map and depth reporting only for the first batch of validation set
+            images.requires_grad_()
+            outputs = model(images)
+            loss = criterion(outputs, depths, masks)
+            loss.backward()
+            saliency, _ = torch.max(images.grad.data.abs(), dim=1)
+            saliency = saliency[0].cpu().numpy()
+
+            predicted_depth = outputs[0].item()
+            actual_depth = depths[0].item()
+            difference = predicted_depth - actual_depth
+
+            plt.figure(figsize=(15, 4))
+
+            plt.subplot(1, 5, 1)
+            plt.imshow(images[0].cpu().detach().permute(1, 2, 0)[:, :, :3])
+            plt.title('Original Image')
+
+            plt.subplot(1, 5, 2)
+            plt.imshow(images[0].cpu().detach().permute(1, 2, 0)[:, :, :3])
+            plt.imshow(images[0].cpu().detach()[3, :, :], cmap='hot', alpha=0.5)
+            plt.title('Mask Image Overlaid')
+
+            plt.subplot(1, 5, 3)
+            plt.imshow(images[0].cpu().detach()[3, :, :])
+            plt.title('Mask Image')
+
+            plt.subplot(1, 5, 4)
+            plt.imshow(images[0].cpu().detach().permute(1, 2, 0)[:, :, :3])
+            plt.imshow(saliency, cmap=plt.cm.hot, alpha=0.4)
+            plt.title('Saliency Map Overlaid')
+
+            plt.subplot(1, 5, 5)
+            plt.imshow(saliency, cmap=plt.cm.hot)
+            plt.title('Saliency Map')
+
+            plt.suptitle(f'Epoch {epoch+1}, Validation Batch {batch_idx+1}/{len(val_loader)}', fontsize=12)
+            plt.show()
+
+            print(f'\n\033[1mPredicted Depth: {predicted_depth:.2f} mm\nActual Depth: {actual_depth:.2f} mm\n\nDifference: {difference:.2f} mm\033[0m\n')
+            print("If difference is (-) --> prediction lower than actual value")
+            print("If diffrence is (+) --> prediction is higher than actual value\n")
+
+    average_val_loss = val_loss_accum / len(val_loader)
+    val_losses.append(average_val_loss)
+    scheduler.step(average_val_loss)
+    actual_depths.append(actual_depth)
+    predicted_depths.append(predicted_depth)
+    difference_depths.append(difference)
+
+    # Save the model
+    os.makedirs(f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}', exist_ok=True)
+    model_save_path = f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}/{model_name}_epoch_{epoch+1}.pth'
+    torch.save(model.state_dict(), model_save_path)
+
+# Export losses to DataFrame
+loss_df = pd.DataFrame({'Train Loss': train_losses, 'Validation Loss': val_losses, 'Actual depth': actual_depths, 'Predicted depth': predicted_depths, 'Difference in depths': difference_depths})
+
+# Save loss DataFrame to CSV
+loss_csv_path = f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}/{model_name}_losses.csv'
+loss_df.to_csv(loss_csv_path, index=False)
+
+plt.figure(figsize=(15, 6))
+
+# Plotting Losses
+plt.subplot(1, 2, 1)
+plt.plot(range(1, num_epochs + 1), train_losses, label='Train Loss')
+plt.plot(range(1, num_epochs + 1), val_losses, label='Validation Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.title('Training and Validation Losses')
+plt.legend()
+plt.grid(True)
+
+# Plotting Depth Information
+plt.subplot(1, 2, 2)
+plt.plot(range(1, num_epochs + 1), actual_depths, label='Actual depth', linestyle='dotted')
+plt.plot(range(1, num_epochs + 1), predicted_depths, label='Predicted depth', linestyle='dashed')
+plt.xlabel('Epoch')
+plt.ylabel('mm')
+plt.title('Depth information')
+plt.legend()
+plt.grid(True)
+
+plt.tight_layout()  # Adjust layout to prevent overlapping
+
+plt.savefig(f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}_combined_plot.png')
+plt.show()
