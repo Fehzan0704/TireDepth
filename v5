@@ -1,0 +1,178 @@
+import os
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset
+from torchvision import transforms
+from PIL import Image
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import timm  # Using timm for easier model adjustments
+from captum.attr import visualization as viz
+from matplotlib.colors import LinearSegmentedColormap
+from captum.attr import GuidedGradCam
+import numpy as np
+
+model_name = "single_angle_model_v20"
+num_epochs = 100
+batch_size = 16
+learning_rate = 0.001
+num_images = 5 # total images to visualize
+
+normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+augmentation = transforms.Compose([
+    transforms.Resize((1024, 1024)),
+    transforms.ToTensor(),
+    normalize
+])
+
+class TireDataset(Dataset):
+    def __init__(self, image_paths, depths, transform=None):
+        self.image_paths = image_paths
+        self.depths = depths
+        self.transform = transform
+        self.valid_data = [(path, depth) for path, depth in zip(image_paths, depths) if os.path.exists(path)]
+
+    def __len__(self):
+        return len(self.valid_data)
+
+    def __getitem__(self, idx):
+        image_path, depth = self.valid_data[idx]
+        image = Image.open(image_path).convert('RGB')
+        if self.transform:
+            image = self.transform(image)
+        return image, torch.tensor([depth], dtype=torch.float)
+
+dataset_folder = '/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Dataset/Single angle - training_validation'
+excel_file = '/content/drive/MyDrive/Bachelorprosjekt - Continental/Conti - Final folder/Datasett.xlsx'
+
+df = pd.read_excel(os.path.join(dataset_folder, excel_file))
+train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
+
+train_df['FullImagePath'] = train_df['Bilde'].apply(lambda x: os.path.join(dataset_folder, x))
+val_df['FullImagePath'] = val_df['Bilde'].apply(lambda x: os.path.join(dataset_folder, x))
+
+train_dataset = TireDataset(train_df['FullImagePath'].tolist(), train_df['Dybde (mm)'].tolist(), transform=augmentation)
+val_dataset = TireDataset(val_df['FullImagePath'].tolist(), val_df['Dybde (mm)'].tolist(), transform=augmentation)
+
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=int(batch_size / 2), shuffle=False)
+
+class SimpleDepthEstimator(nn.Module):
+    def __init__(self):
+        super(SimpleDepthEstimator, self).__init__()
+        self.features = timm.create_model('resnet34', pretrained=True, drop_rate=0.5)
+        self.features.fc = nn.Identity()
+        self.depth_layers = nn.Sequential(
+            nn.Linear(512, 256),
+            nn.ReLU(),
+            nn.Dropout(0.5),
+            nn.Linear(256, 1)
+        )
+
+    def forward(self, x):
+        x = self.features(x)
+        x = x.view(x.size(0), -1)
+        x = self.depth_layers(x)
+        return x
+
+model = SimpleDepthEstimator()
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', factor=0.5, patience=10, cooldown=10)
+
+convlayer = list(list(list(list(model.children())[0].children())[-3].children())[-1].children())[-3]
+model = model.to(device)
+guided_gc = GuidedGradCam(model, convlayer)
+
+train_losses = []
+val_losses = []
+predicted_depths = []
+actual_depths = []
+
+for epoch in range(num_epochs):
+    model.train()
+    train_loss_accum = 0
+    for batch_idx, (images, depths) in enumerate(train_loader):
+        images, depths = images.to(device), depths.to(device)
+        optimizer.zero_grad()
+        outputs = model(images)
+        loss = criterion(outputs, depths)
+        loss.backward()
+        optimizer.step()
+        train_loss_accum += loss.item() * images.size(0)
+        if (batch_idx + 1) % 3 == 0 or (batch_idx + 1) == 1:
+            print(f'Epoch {epoch+1}, Batch {batch_idx+1}/{len(train_loader)}, Train Loss: {loss.item():.4f}')
+
+    average_train_loss = train_loss_accum / len(train_dataset)
+    train_losses.append(average_train_loss)
+    print(f'\nEpoch {epoch+1}, Average Train Loss: {average_train_loss:.4f}\n')
+
+    model.eval()
+    val_loss_accum = 0
+    for batch_idx, (images, depths) in enumerate(val_loader):
+        images, depths = images.to(device), depths.to(device)
+        with torch.no_grad():
+            outputs = model(images)
+            loss = criterion(outputs, depths)
+        val_loss_accum += loss.item() * images.size(0)
+        predicted_depths.append(outputs.detach().cpu().numpy())
+        actual_depths.append(depths.detach().cpu().numpy())
+
+        if epoch == 0 or epoch == num_epochs - 1 or (epoch - 1) % 5 == 0:
+
+            if batch_idx == 0:
+
+                for i in range(num_images):
+                    images.requires_grad = True
+
+                    model_input, _ = val_dataset[i]
+                    model_input = model_input.requires_grad_().to(device).unsqueeze(0)
+                    attribution = guided_gc.attribute(model_input, 0)
+                    visualization = viz.visualize_image_attr(
+                        np.transpose(attribution.squeeze().cpu().detach().numpy(), (1, 2, 0)),
+                        np.transpose(model_input.squeeze().cpu().detach().numpy(), (1, 2, 0)),
+                        method='blended_heat_map',
+                        show_colorbar=True,
+                        sign='absolute_value',
+                        outlier_perc=25,
+                        fig_size=(3,3),
+                        title=f'Image {i+1} - Predicted Depth: {outputs[i+1].item():.2f} - Actual depth: {depths[i+1].item():.2f}'
+                    )
+
+        if (batch_idx + 1) % 3 == 0 or (batch_idx + 1) == 1:
+            print(f'Epoch {epoch+1}, Validation Batch {batch_idx+1}/{len(val_loader)}, Validation Loss: {loss.item():.4f}')
+
+    average_val_loss = val_loss_accum / len(val_dataset)
+    val_losses.append(average_val_loss)
+    print(f'\nEpoch {epoch+1}, Average Validation Loss: {average_val_loss:.4f}\n')
+    scheduler.step(average_val_loss)
+
+    model_save_path = f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}/{model_name}_epoch_{epoch + 1}.pth'
+    os.makedirs(os.path.dirname(model_save_path), exist_ok=True)
+    torch.save(model.state_dict(), model_save_path)
+
+flattened_predicted_depths = [depth for sublist in predicted_depths for depth in sublist]
+flattened_actual_depths = [depth for sublist in actual_depths for depth in sublist]
+
+# Ensure the lists have the same length
+min_length = min(len(flattened_predicted_depths), len(flattened_actual_depths))
+flattened_predicted_depths = flattened_predicted_depths[:min_length]
+flattened_actual_depths = flattened_actual_depths[:min_length]
+
+# Check if train_losses and val_losses need to be trimmed
+if len(train_losses) > num_epochs:
+    train_losses = train_losses[:num_epochs]
+if len(val_losses) > num_epochs:
+    val_losses = val_losses[:num_epochs]
+
+results_df = pd.DataFrame({
+    'Train Loss': train_losses,
+    'Validation Loss': val_losses,
+})
+results_csv_path = f'/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Generated models/{model_name}/{model_name}_results.csv'
+results_df.to_csv(results_csv_path, index=False)
