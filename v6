@@ -18,7 +18,7 @@ import numpy as np
 model_name = "single_angle_model_v20"
 num_epochs = 100
 batch_size = 16
-learning_rate = 0.001
+learning_rate = 0.0001
 num_images = 3  # total images to visualize
 mask_weight = 10.0  # Weight for mask areas
 dataset_folder = '/content/drive/MyDrive/Bachelorprosjekt - Continental/LAST/Dataset/Single angle - training_validation'
@@ -126,7 +126,7 @@ def custom_loss(outputs, depths, masks, mask_weight=mask_weight):
     mse_loss = nn.MSELoss(reduction='none')
     loss = mse_loss(outputs, depths)
     if masks is not None:
-        #masks = masks / 255.0  # Normalize masks to [0, 1]
+        masks = masks / 255.0  # Normalize masks to [0, 1]
         masks = masks.mean(dim=1, keepdim=True)  # Reduce to single channel
         masks = masks.view(masks.size(0), -1)  # Flatten mask
         outputs = outputs.view(outputs.size(0), -1)  # Flatten outputs
