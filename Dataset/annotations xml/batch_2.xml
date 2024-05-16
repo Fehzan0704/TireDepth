@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>710604</id>
+      <size>100</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-04-16 15:18:44.854452+00:00</created>
+      <updated>2024-04-17 02:13:30.114440+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>99</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>712119</id>
+          <start>0</start>
+          <stop>99</stop>
+          <url>https://app.cvat.ai/api/jobs/710604</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>s351999</username>
+        <email>s351999@oslomet.no</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Threads</name>
+          <color>#9a4f14</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-04-17 02:14:04.874461+00:00</dumped>
+  </meta>
+  <image id="0" name="IMG_2519.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="333.90,1004.14;307.39,666.12;312.36,213.77;310.70,11.62" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="431.66,1010.76;423.37,3.33" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="536.36,1024.00;544.71,498.32;541.84,108.93;536.66,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="1" name="IMG_2520.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="371.57,1024.00;389.24,897.37;406.98,695.80;406.98,497.45;402.14,402.31;387.63,244.27;346.66,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="450.52,1021.54;490.80,844.20;503.74,737.73;503.70,465.20;487.61,268.46;435.15,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="532.28,1024.00;560.18,924.79;587.59,826.42;597.27,689.35;603.72,560.34;590.82,266.85;534.97,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="2" name="IMG_2521.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="483.91,1024.00;427.90,858.70;398.92,671.61;395.69,558.73;395.69,442.62;410.21,187.83;442.46,5.61" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="400.53,1021.54;365.05,926.40;329.58,771.59;302.16,579.69;298.94,368.44;310.23,253.95;331.19,74.95;353.77,7.22" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="345.70,1023.16;303.78,945.75;257.01,819.97;226.37,653.87;216.70,460.36;221.53,337.80;231.21,189.44;274.75,0.77" z_order="0">
+    </polyline>
+  </image>
+  <image id="3" name="IMG_2522.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="531.15,1019.93;544.05,458.75;552.10,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="442.46,1016.71;440.85,552.28;450.51,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="361.67,1024.00;347.32,807.07;342.48,578.08;348.93,303.94;361.73,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="4" name="IMG_2524.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="595.66,1000.58;611.78,826.42;627.91,537.76;637.58,276.52;639.19,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="526.31,997.35;534.38,700.64;548.89,12.06" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="445.68,986.07;436.01,734.50;437.62,447.46;453.75,5.61" z_order="0">
+    </polyline>
+  </image>
+  <image id="5" name="IMG_2525.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="442.46,1002.19;500.51,887.70;527.93,771.59;545.70,639.40;553.73,445.85;550.50,294.30;539.22,162.03;508.58,2.38" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="506.96,997.35;581.14,884.47;621.46,765.14;632.75,678.06;644.03,545.83;648.87,455.52;645.65,334.58;637.58,184.60;605.33,2.38" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="676.29,2.38;703.70,100.70;721.40,200.70;727.89,299.10;731.10,428.10;726.30,550.70;711.76,657.10;698.86,742.56;669.84,839.32;611.78,945.75;579.53,971.55" z_order="0">
+    </polyline>
+  </image>
+  <image id="6" name="IMG_2526.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="466.65,1021.54;450.52,950.59;436.01,832.87;432.62,757.56;434.07,625.33;450.20,447.94;466.33,339.90;497.13,191.54;535.83,60.92;558.11,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="476.83,0.00;421.33,139.94;390.69,260.88;366.34,399.56;351.99,539.86;350.22,691.44;348.61,783.36;366.34,926.88;403.28,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="331.25,1024.00;284.10,913.98;263.14,767.24;258.30,620.49;263.14,502.77;272.98,412.46;293.94,291.52;317.97,189.93;345.38,106.07;390.69,2.86" z_order="0">
+    </polyline>
+  </image>
+  <image id="7" name="IMG_2527.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="550.34,1002.68;567.92,883.34;584.05,681.77;595.33,394.73;609.53,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="484.06,999.45;487.45,793.04;498.58,536.63;511.48,259.27;527.00,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="406.82,999.45;390.69,910.76;392.15,726.92;395.53,525.35;403.43,323.77;413.11,112.52;424.36,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="8" name="IMG_2529.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="392.15,1004.29;389.08,702.73;390.69,539.86;393.92,299.58;405.21,93.17;411.42,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="524.43,0.00;522.93,136.71;518.09,293.13;513.25,491.48;506.60,641.50;502.00,814.00;497.13,1013.96" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="596.95,1012.35;608.40,875.28;619.68,673.71;629.20,489.87;630.97,359.25;637.42,188.31;638.90,98.00;638.63,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="9" name="IMG_2530.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="475.68,1022.62;503.90,924.52;518.68,866.73;526.74,792.82;536.15,677.25;540.18,569.75;541.53,451.49;537.50,343.98;530.78,263.35;518.68,165.25;510.62,108.81;501.21,48.34;489.12,9.37" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="566.43,1024.00;591.85,952.49;611.23,871.74;629.00,781.30;643.53,679.55;649.99,561.65;651.61,425.98;641.92,314.55;632.23,220.87;617.69,123.97;604.77,46.45;591.85,2.84" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="641.18,1024.00;682.29,963.80;721.05,860.43;735.59,752.23;745.28,647.25;756.59,500.28;751.74,380.76;745.28,277.40;732.36,193.42;721.05,120.74;704.90,60.98;687.14,7.68" z_order="0">
+    </polyline>
+  </image>
+  <image id="10" name="IMG_2531.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="509.48,1021.94;482.03,897.58;467.49,807.14;452.96,686.01;449.73,579.41;446.50,443.75;448.11,343.62;457.80,240.25;478.80,107.82;509.39,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="414.19,1021.94;388.35,949.26;367.36,870.12;343.13,732.84;338.29,635.94;331.83,484.13;333.44,363.00;346.36,251.56;365.74,146.58;381.89,57.75;394.81,4.45" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="310.83,6.07;275.30,90.05;254.30,201.49;231.69,321.01;228.46,413.06;225.23,487.36;228.50,564.90;228.50,618.20;231.70,686.00;247.80,784.50;280.10,917.00;327.00,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="11" name="IMG_2532.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="582.31,1024.00;591.85,844.28;603.16,644.02;612.85,424.37;616.08,261.25;630.61,18.99" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="505.98,0.00;483.64,430.83;477.18,694.08;475.57,934.73;487.09,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="390.88,1024.00;373.82,916.96;364.13,795.83;352.82,606.87;360.90,366.23;370.59,165.96;383.51,7.68" z_order="0">
+    </polyline>
+  </image>
+  <image id="12" name="IMG_2534.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="600.66,12.06;409.83,209.60" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="502.56,14.74;689.35,249.91" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="678.60,32.21;587.22,114.19;595.28,138.38;541.53,204.22;532.12,200.19;389.67,370.86" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="499.87,268.73;674.57,542.87" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="569.75,287.54;389.67,510.62" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="439.40,318.45;489.12,413.86;565.72,529.43;658.44,671.88" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="502.56,142.41;579.15,278.14;682.63,401.77" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="389.67,399.08;489.12,536.15" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="389.67,542.87;478.37,688.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="472.99,559.00;587.22,752.51;651.72,811.64" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="388.33,679.94;440.74,745.79" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="470.30,714.88;522.71,799.54;571.09,861.36;610.06,897.64" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="385.64,812.98;429.99,878.83;454.18,913.77;483.74,954.08;509.27,986.33" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="468.96,842.54;526.74,921.83;576.47,972.90;596.62,991.71" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="682.63,262.01;635.59,330.54;576.47,416.55;538.84,470.30;486.43,533.46;378.92,658.44" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="686.66,413.86;583.19,548.25;550.93,610.06;522.71,627.53;458.21,725.63;378.92,786.10" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="415.21,13.40;499.87,96.72" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="667.85,563.03;568.40,685.32" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="565.72,700.10;533.46,771.32;472.99,827.76;393.70,901.67" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="674.57,694.72;614.09,748.48" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="611.41,782.07;561.68,831.79" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="564.37,845.23;489.12,920.49;393.70,995.74" z_order="0">
+    </polyline>
+  </image>
+  <image id="13" name="IMG_2535.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="448.80,6.68;622.16,255.29" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="490.46,63.12;427.30,154.50;382.95,201.54" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="498.52,201.54;439.40,294.26;370.86,360.11" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="489.12,333.23;424.61,439.40;366.83,497.18" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="489.12,463.58;434.02,545.56;354.73,619.47" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="515.99,549.59;472.99,615.44;400.42,698.75;321.14,765.95" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="491.80,694.72;415.21,774.01;311.73,872.11" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="456.87,130.31;619.47,393.70" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="468.96,270.07;597.97,511.96" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="381.61,221.69;424.61,310.39;472.99,408.49;569.75,616.78" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="381.61,381.61;443.43,494.49;456.87,515.99;440.74,536.15;487.77,622.16;546.90,748.48" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="364.14,510.62;403.11,581.84;434.02,636.94;434.02,662.47;421.93,675.91;460.90,760.57;511.96,857.33" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="346.67,643.66;380.27,704.13;366.83,716.22;408.49,769.98" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="567.06,619.47;602.00,639.63;475.68,788.79" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="607.37,542.87;505.24,662.47" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="615.44,411.17;528.09,528.09" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="619.47,266.04;584.53,325.17;544.21,396.39;494.49,459.55" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="580.50,216.32;533.46,252.60;540.18,275.45;506.59,330.54" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="538.84,149.13;506.59,198.85" z_order="0">
+    </polyline>
+  </image>
+  <image id="14" name="IMG_2536.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="487.77,13.40;537.50,134.35;583.19,221.69" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="450.15,127.63;482.40,231.10;557.65,372.20" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="420.58,252.60;460.90,373.55;548.25,517.34" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="372.20,300.98;436.71,477.02;489.12,576.47" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="556.31,25.50;395.05,158.53" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="635.59,29.53;530.78,100.75;536.15,127.63;468.96,192.13;335.92,325.17" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="619.47,103.44;556.31,161.22;553.62,176.00;491.80,233.79;495.84,252.60;450.15,311.73;440.74,309.04;305.01,463.58" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="591.25,240.51;520.03,294.26;530.78,321.14;475.68,374.89;434.02,429.99;377.58,493.15;306.36,583.19" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="323.83,350.70;380.27,485.09" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="571.09,392.36;462.24,509.27" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="369.52,510.62;415.21,591.25;475.68,694.72;534.81,775.35" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="541.10,651.53;492.88,709.86" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="544.68,524.22;458.35,638.54" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="463.02,526.56;414.80,587.22;407.80,587.99;363.17,658.92;330.74,697.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="376.62,653.33;418.05,726.12;450.53,779.88;544.59,882.90" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="450.53,674.61;415.81,720.52" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="407.97,726.12;371.02,785.48;337.42,812.35" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="488.60,737.32;457.25,767.56;462.84,796.67;435.97,830.27;424.77,834.75;395.65,875.07;367.66,891.86" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="402.37,163.95;428.13,226.67" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="394.53,160.59;347.50,203.15;372.14,266.98" z_order="0">
+    </polyline>
+  </image>
+  <image id="15" name="IMG_2537.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="644.26,127.00;589.39,186.35;648.74,263.62;586.03,342.01;639.78,424.88;586.03,492.07;631.94,558.14;572.59,623.10;619.63,675.73;564.75,746.28;611.79,802.27;558.03,864.99;600.59,899.70;554.67,942.26" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="373.26,114.68;416.93,170.67;351.98,237.86;403.49,322.97;355.34,390.17;345.26,393.53;394.53,473.04;347.50,527.91;390.05,609.66;343.02,660.05;394.53,731.72;348.62,783.24;401.25,850.43;354.22,885.14;399.01,929.94;364.30,950.10" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="468.44,111.32;413.57,171.79;461.72,269.22;403.49,320.73;441.57,411.44;403.49,459.60;394.53,480.87;441.57,542.47;393.41,600.70;442.69,672.37;401.25,727.24;395.54,745.61;439.44,805.30;400.24,843.60;396.44,857.60;445.04,895.89;408.64,925.68" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="500.14,74.81;596.89,193.07;533.73,279.08;588.83,344.92;537.76,420.18;587.49,491.40;527.01,563.97;578.08,620.41;522.98,694.32;560.61,748.07;518.95,815.27;557.92,859.61;513.57,905.30;552.55,942.93" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="547.17,155.44;486.70,221.29;461.17,260.26;490.73,344.92;533.73,426.90;492.07,487.37;439.66,553.22;477.29,637.88;527.01,706.41;484.01,769.57;447.73,799.14;426.23,831.39;506.86,905.30" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="446.38,136.63;540.45,277.73;497.45,351.64;442.35,410.77;533.73,561.28;443.70,680.88;432.94,709.10;517.61,824.67;481.32,874.39;443.70,894.55" z_order="0">
+    </polyline>
+  </image>
+  <image id="16" name="IMG_2539.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="604.96,42.56;587.49,228.01;582.11,381.21;572.70,546.50;564.64,668.79;559.27,830.05;552.55,1008.78" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="473.26,1008.78;462.51,894.55;462.51,719.85;467.88,547.84;471.92,387.93;484.01,226.67;493.42,80.19;501.48,42.56" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="403.38,34.50;392.63,131.25;380.54,264.29;371.13,389.27;361.72,526.34;359.03,645.94;364.41,787.04;373.82,905.30;388.60,991.31" z_order="0">
+    </polyline>
+  </image>
+  <image id="17" name="IMG_2540.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="406.07,35.84;445.04,228.01;469.23,412.12;479.98,573.38;484.01,748.07;479.98,878.43;459.82,1018.18" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="510.89,30.47;537.76,146.04;568.67,322.08;583.45,476.62;592.86,645.94;588.83,788.39;574.05,894.55;542.67,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="611.67,31.81;641.24,142.01;672.15,301.92;692.30,481.99;693.65,636.54;688.27,774.95;674.83,871.71;641.24,983.24;622.43,1011.46" z_order="0">
+    </polyline>
+  </image>
+  <image id="18" name="IMG_2541.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="544.48,37.19;504.17,174.26;465.20,363.74;451.76,531.72;438.32,710.45;446.38,851.55;454.45,950.99;478.64,1019.53" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="446.38,31.81;414.13,132.60;379.19,264.29;363.07,382.55;352.31,488.71;342.91,592.19;338.88,695.66;342.91,808.55;356.35,895.90;379.19,969.81;399.35,1011.46" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="349.63,38.53;313.34,146.04;287.81,229.35;271.69,332.83;254.22,459.15;246.15,565.31;247.50,664.76;252.87,749.42;271.69,860.96;290.50,929.49;310.66,981.90;346.94,1014.15" z_order="0">
+    </polyline>
+  </image>
+  <image id="19" name="IMG_2542.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="594.21,31.81;587.49,437.65;588.83,777.64;588.83,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="486.70,30.47;474.60,262.95;471.92,465.87;473.26,702.38;481.32,887.83;494.76,1014.15" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="381.88,37.19;367.10,185.01;360.38,405.40;357.69,570.69;373.82,774.95;381.88,895.90;407.41,1019.53" z_order="0">
+    </polyline>
+  </image>
+  <image id="20" name="IMG_2544.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="384.57,34.50;384.57,217.26;387.25,465.87;388.60,686.26;395.32,907.99;399.35,995.34" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="486.70,991.31;497.45,856.92;500.14,705.07;502.82,542.47;502.82,374.49;501.48,206.51;498.79,35.84" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="608.99,31.81;615.71,182.32;618.39,398.68;617.05,562.62;611.67,699.70;599.58,873.05;587.49,949.65;575.39,991.31" z_order="0">
+    </polyline>
+  </image>
+  <image id="21" name="IMG_2545.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="392.63,29.12;410.10,120.50;430.26,268.33;436.98,342.24;449.07,449.74;447.73,551.87;438.32,683.57;415.48,795.11;403.38,864.99;375.16,913.36;355.00,944.27" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="496.11,35.84;514.92,142.01;529.70,244.14;543.14,365.08;544.48,491.40;536.42,624.44;527.01,698.35;501.48,800.48;473.26,869.02;451.76,906.65;432.94,925.46" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="586.14,37.19;598.24,88.25;613.02,163.51;621.08,238.76;630.49,309.98;633.18,398.68;630.49,475.28;627.80,557.25;621.08,624.44;610.33,703.73;583.45,778.98;565.98,830.05;539.11,866.33;516.26,897.24" z_order="0">
+    </polyline>
+  </image>
+  <image id="22" name="IMG_2546.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="539.11,31.81;514.92,133.94;490.73,238.76;477.29,346.27;465.20,459.15;454.45,566.66;446.38,692.98;449.07,783.01;454.45,871.71;469.23,952.34;486.70,1002.06" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="423.54,38.53;407.41,103.03;392.63,176.94;377.85,265.64;367.10,346.27;357.69,443.02;352.31,529.03;349.63,604.28;344.25,701.04;350.97,795.11;367.10,891.86;380.54,941.59;396.66,968.46;412.79,985.93" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="325.44,34.50;302.59,103.03;281.09,190.38;275.72,261.61;263.62,326.11;258.25,393.30;250.18,457.81;246.15,515.59;244.81,576.06;244.81,645.94;248.84,722.54;255.56,792.42;270.34,851.55;285.12,906.65;307.97,945.62;322.75,961.74" z_order="0">
+    </polyline>
+  </image>
+  <image id="23" name="IMG_2547.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="398.00,33.16;389.94,246.82;387.25,448.40;388.60,641.91;387.25,749.42;392.63,867.67;399.35,912.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="516.26,33.16;513.57,179.63;505.51,336.86;502.82,464.52;498.79,593.53;492.07,726.57;488.04,828.70;475.95,918.74" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="630.49,33.16;630.49,151.41;619.74,311.33;614.36,438.99;611.67,555.91;596.89,690.29;590.17,791.08;576.73,860.96;564.64,913.36" z_order="0">
+    </polyline>
+  </image>
+  <image id="24" name="IMG_2549.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="489.39,31.81;488.04,180.98;485.35,357.02;484.01,467.21;484.01,764.20;485.35,924.12;486.70,977.87;488.04,1010.12" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="594.21,37.19;592.86,147.38;592.86,260.26;592.86,404.05;586.14,555.91;583.45,680.88;583.45,844.83;578.08,949.65;570.02,999.37;568.67,1007.43" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="389.94,33.16;387.25,85.56;381.88,171.57;376.50,253.54;372.47,355.67;373.82,448.40;373.82,537.09;372.47,625.78;377.85,734.64;381.88,815.27;385.91,895.90;396.66,955.02;402.04,995.34;412.79,1012.81" z_order="0">
+    </polyline>
+  </image>
+  <image id="25" name="IMG_2550.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="381.88,33.16;396.66,92.28;411.44,166.19;422.19,228.01;432.94,296.55;439.66,365.08;447.73,465.87;443.70,566.66;439.66,655.35;424.88,730.60;415.48,811.23;392.63,899.93;368.44,961.74;349.63,992.65;329.47,1018.18" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="459.82,30.47;488.04,96.31;506.86,175.60;522.98,276.39;529.70,357.02;536.42,447.06;537.76,547.84;531.04,641.91;510.89,780.33;486.70,881.11;438.32,972.49;395.32,1016.84" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="457.13,1002.06;502.82,957.71;532.39,910.68;553.89,852.89;584.80,754.79;607.64,631.16;615.71,538.44;614.36,459.15;610.33,328.80;604.96,256.23;587.49,186.35;565.98,103.03;537.76,34.50" z_order="0">
+    </polyline>
+  </image>
+  <image id="26" name="IMG_2551.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="471.92,1022.21;458.48,960.40;453.10,889.18;450.41,768.23;459.82,640.57;474.60,519.62;508.20,332.83;545.83,170.23;572.70,96.31;599.58,42.56" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="395.32,1023.56;371.13,926.80;359.03,813.92;357.69,715.82;363.07,601.60;385.91,433.62;406.07,312.67;439.66,197.10;479.98,81.53;502.82,39.87" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="323.97,1024.00;301.25,968.46;273.03,860.96;262.28,729.26;263.62,656.69;271.69,547.84;285.12,440.34;312.00,300.58;338.88,209.20;365.75,133.94;391.29,82.88;416.82,37.19" z_order="0">
+    </polyline>
+  </image>
+  <image id="27" name="IMG_2552.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="377.85,992.65;368.44,893.21;361.72,742.70;365.75,609.66;367.10,495.43;373.82,342.24;377.85,174.26;387.25,41.22" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="497.20,34.99;491.04,209.09;486.41,361.62;478.71,503.36;471.01,671.30;469.47,820.75;466.38,913.19;457.14,990.22" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="548.04,987.76;561.91,889.15;572.69,765.90;581.94,633.40;589.64,473.16;598.88,308.31;605.05,165.02;608.13,41.77" z_order="0">
+    </polyline>
+  </image>
+  <image id="28" name="IMG_2554.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="669.76,30.98;679.00,249.76;675.92,456.22;675.92,627.23;671.30,853.72;662.05,1018.57" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="589.64,1015.49;583.48,789.01;580.40,534.79;578.86,286.74;577.31,32.52" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="483.33,32.52;481.79,197.38;487.95,485.49;494.12,707.35;500.28,915.34;509.55,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="433.81,1024.00;421.70,898.40;407.84,735.08;401.67,587.18;397.05,440.81;397.05,292.90;395.51,165.02;398.59,30.98" z_order="0">
+    </polyline>
+  </image>
+  <image id="29" name="IMG_2555.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="392.43,30.98;406.30,134.21;424.79,252.84;441.73,413.08;447.90,522.47;450.98,656.51;454.06,755.11;447.90,858.34;440.19,947.70;417.08,1012.41" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="480.25,1007.79;512.61,927.67;526.47,815.20;529.55,679.62;535.72,530.17;526.47,386.88;509.52,202.00;477.17,32.52" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="568.07,37.14;589.64,141.91;609.67,275.95;621.99,497.81;621.99,644.18;609.67,761.27;597.34,862.96;572.69,947.70;543.42,1001.62" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="609.67,983.13;642.02,938.46;668.22,873.75;686.70,779.76;702.11,633.40;709.82,503.98;709.82,396.13;699.03,265.17;689.79,174.27;677.46,101.85;660.51,35.60" z_order="0">
+    </polyline>
+  </image>
+  <image id="30" name="IMG_2556.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="577.31,32.52;554.20,123.42;526.47,257.46;511.06,359.15;497.20,491.65;494.12,599.50;497.20,716.59;503.36,830.61;520.31,916.89;535.72,983.14;557.29,1021.65" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="506.44,1023.19;474.09,981.59;447.90,923.05;437.11,886.07;430.95,792.09;424.79,721.22;421.70,641.10;420.16,551.74;420.16,480.87;426.33,394.59;444.81,272.87;464.84,178.89;484.87,103.39;500.28,40.23" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="421.70,34.06;386.27,144.99;364.70,260.55;344.67,409.99;344.67,527.09;344.67,642.64;352.37,744.33;366.24,813.66;380.10,895.32;406.30,952.32;443.27,1007.79" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="378.56,978.51;324.64,890.69;299.99,796.71;284.58,671.91;275.34,564.06;278.42,462.38;289.20,374.56;298.45,275.95;316.94,178.89;332.34,115.72;353.91,43.31" z_order="0">
+    </polyline>
+  </image>
+  <image id="31" name="IMG_2557.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="620.45,37.14;625.08,394.59;618.91,617.99;614.29,866.04;594.26,1021.65" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="523.39,1020.11;526.47,842.93;524.93,645.72;531.09,397.67;531.09,158.86;531.09,32.52" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="441.73,32.52;438.65,237.44;437.11,448.51;444.81,804.41;449.21,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="373.94,1020.11;361.62,815.20;355.45,648.80;353.91,487.03;350.83,317.55;355.45,132.67;369.32,34.06" z_order="0">
+    </polyline>
+  </image>
+  <image id="32" name="IMG_2559.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="591.18,75.66;585.02,349.91;585.02,819.82;588.07,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="460.22,1020.11;454.06,832.15;455.60,570.23;460.22,391.51;471.01,206.62;475.63,84.91" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="400.13,35.60;372.40,138.83;352.37,299.06;346.21,440.81;338.51,634.94;343.13,790.55;349.29,912.26;361.62,1023.19" z_order="0">
+    </polyline>
+  </image>
+  <image id="33" name="IMG_2560.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="500.28,961.57;534.17,852.18;563.45,738.16;581.94,611.83;597.34,460.84;589.64,346.83;588.10,202.00;581.94,131.13;557.29,41.77" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="597.34,953.86;631.24,884.53;657.43,799.79;682.08,675.00;699.03,540.95;708.27,434.65;705.19,319.09;700.57,240.52;685.16,143.45;666.68,77.20;649.73,41.77" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="658.97,955.40;697.49,895.32;742.17,787.47;757.58,696.56;774.52,619.53;789.93,522.47;791.47,417.70;789.93,340.66;780.69,238.98;768.36,166.56;752.95,98.77;732.93,46.39" z_order="0">
+    </polyline>
+  </image>
+  <image id="34" name="IMG_2561.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="520.31,1018.57;500.28,963.11;477.17,850.64;469.47,759.73;458.68,634.94;450.98,500.90;469.47,343.74;480.25,220.49;500.28,95.69;509.52,51.01" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="434.03,1017.03;412.46,976.97;386.27,878.37;372.40,775.14;358.53,665.75;353.91,559.44;355.45,443.89;366.24,329.88;381.65,194.30;392.43,143.45;410.92,63.34;421.70,43.31" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="323.10,37.14;290.74,120.34;267.63,222.03;255.31,323.72;241.44,482.41;246.06,599.50;255.31,704.27;264.55,804.41;286.12,893.77;306.15,952.32;329.26,993.92" z_order="0">
+    </polyline>
+  </image>
+  <image id="35" name="IMG_2562.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="374.63,1008.59;383.30,705.23;405.59,420.44;436.54,92.32;451.40,8.12" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="487.80,1020.85;502.66,846.27;528.66,560.24;548.48,274.21;562.10,108.29;570.76,1.81" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="580.67,1009.71;612.86,806.64;633.91,640.72;647.53,457.47;658.68,291.55;669.82,15.43" z_order="0">
+    </polyline>
+  </image>
+  <image id="36" name="IMG_2564.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="444.47,1006.00;429.61,951.51;412.27,804.17;414.75,661.77;408.56,493.38;406.08,264.31;407.32,97.15;413.51,16.66" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="527.43,1007.23;526.19,866.08;524.95,580.05;527.43,300.21;526.19,1.81" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="616.58,1004.76;627.72,942.85;633.91,838.84;638.87,707.59;641.34,528.05;641.34,383.17;643.82,199.92;643.82,50.10;640.15,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="37" name="IMG_2565.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="377.60,1012.19;403.61,968.85;435.80,887.13;446.94,826.45;456.85,715.02;458.09,602.34;455.61,502.04;453.13,383.17;434.56,223.45;420.94,150.39;409.80,79.81;396.49,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="463.04,996.09;485.33,970.09;508.85,934.18;524.95,884.65;537.33,846.27;560.86,749.69;565.81,687.77;573.24,576.34;572.00,534.24;572.00,454.99;568.29,385.65;562.10,311.36;554.67,243.26;541.05,159.06;529.90,78.58;511.33,6.76" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="554.67,962.66;594.29,916.84;616.58,869.79;646.29,790.55;658.68,713.78;666.11,645.68;671.06,562.72;671.06,487.18;668.58,400.51;664.87,300.21;652.49,211.06;641.34,135.53;632.67,78.58;611.62,3.04" z_order="0">
+    </polyline>
+  </image>
+  <image id="38" name="IMG_2566.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="516.28,1017.14;506.38,977.52;497.71,916.84;496.47,866.08;493.99,815.31;493.99,774.45;493.99,707.59;498.95,651.87;506.38,596.15;517.52,511.95;536.09,393.08;555.91,308.88;576.95,224.68;600.48,149.15;624.01,67.43;656.52,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="446.94,1023.33;424.65,987.42;411.03,935.42;397.41,880.94;396.18,822.74;389.99,745.97;393.70,682.82;396.18,629.58;399.89,559.00;413.51,468.61;442.00,313.80;480.40,167.70;549.70,5.50" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="356.55,996.09;335.50,945.32;314.45,875.98;300.83,796.74;295.88,715.02;295.88,643.20;303.31,557.76;314.45,459.94;326.84,374.51;351.60,275.45;366.46,208.59;391.22,146.68;415.99,79.81;453.13,1.81" z_order="0">
+    </polyline>
+  </image>
+  <image id="39" name="IMG_2567.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="443.23,1003.52;423.42,736.06;412.27,433.94;411.03,138.01;412.26,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="543.52,1006.00;548.48,909.41;546.00,667.96;544.76,523.09;540.01,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="652.37,1017.22;668.50,868.06;671.19,712.17;675.22,486.41;672.53,309.02;665.81,1.29" z_order="0">
+    </polyline>
+  </image>
+  <image id="40" name="IMG_2569.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="452.60,1019.72;436.70,792.87;426.10,526.80;417.61,111.26;422.92,8.44" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="520.44,1.02;535.28,688.99;536.34,906.29;537.40,958.20;536.30,1018.70" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="614.78,1016.54;627.50,962.48;634.92,879.79;638.10,736.69;640.22,581.92;634.92,340.23;632.80,195.01;621.14,2.08" z_order="0">
+    </polyline>
+  </image>
+  <image id="41" name="IMG_2570.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="445.18,1018.66;474.86,939.16;489.70,854.35;504.54,747.29;509.84,612.66;510.90,499.24;507.72,395.35;497.12,266.03;479.10,116.56;469.56,48.72;453.66,1.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="521.49,1024.00;546.54,975.09;575.79,879.69;594.88,771.56;606.32,657.08;616.50,520.97;608.87,397.58;598.69,264.01;582.15,153.35;566.89,68.12;547.59,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="571.98,1023.43;612.68,985.27;647.03,919.12;677.56,803.36;692.82,706.69;703.00,562.95;704.27,420.48;692.82,276.74;678.83,172.43;662.29,89.74;634.59,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="42" name="IMG_2571.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="610.14,982.72;578.34,952.19;552.90,893.68;530.00,805.91;510.92,706.69;494.38,596.02;491.84,462.45;491.84,297.09;498.20,192.78;510.92,70.66;526.88,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="532.54,975.09;508.38,953.47;486.75,924.21;468.94,883.50;446.05,826.26;429.51,758.84;404.07,629.09;393.89,519.70;390.08,429.38;388.80,325.07;395.16,230.94;405.34,98.65;428.24,1.97" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="453.68,964.91;418.06,934.39;401.52,908.94;384.99,882.23;368.45,838.98;345.55,771.56;326.47,686.34;308.66,593.48;304.85,523.51;298.49,392.49;301.03,278.01;306.12,163.52;320.11,87.20;340.70,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="43" name="IMG_2572.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="457.49,976.36;451.13,916.58;444.77,786.83;446.05,584.57;446.05,379.77;454.62,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="533.82,970.00;546.54,821.17;554.17,571.85;564.25,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="613.96,966.19;636.85,889.86;650.85,757.57;663.57,536.23;680.51,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="44" name="IMG_2574.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="412.59,1024.00;401.52,819.90;398.98,454.82;413.00,105.00;425.05,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="518.55,1022.16;510.92,611.28;513.46,236.03;524.06,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="621.86,0.00;626.68,214.40;626.68,701.60;616.79,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="45" name="IMG_2575.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="435.97,1024.00;453.68,903.86;463.85,733.40;462.58,546.41;451.13,312.35;429.51,131.72;402.94,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="540.18,1020.88;560.53,921.66;574.52,803.36;577.07,713.05;578.34,570.58;574.52,438.29;563.07,308.54;540.18,153.35;509.05,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="635.58,1022.16;650.85,959.83;676.29,845.34;678.83,749.94;687.73,627.82;689.01,540.05;680.10,378.50;661.02,224.58;641.94,131.72;621.59,54.13;601.02,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="46" name="IMG_2576.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="458.77,1015.80;447.32,925.48;444.77,828.80;448.59,741.03;454.95,613.83;472.76,501.89;482.93,414.12;512.19,266.56;541.45,160.98;569.43,77.02;602.44,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="369.91,1014.42;355.07,945.52;339.17,832.09;342.35,709.13;361.43,511.96;386.87,356.13;416.55,209.85;456.84,89.00;503.48,3.14" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="290.41,1016.54;272.39,965.66;250.13,857.53;248.01,765.31;248.01,605.24;258.61,489.70;276.63,366.73;305.25,252.25;343.41,120.80;403.83,1.02" z_order="0">
+    </polyline>
+  </image>
+  <image id="47" name="IMG_2577.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="371.50,1020.25;357.72,863.36;351.36,587.75;363.02,367.26;375.74,1.55" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="470.62,1014.42;471.68,817.25;478.04,506.66;491.82,206.67;497.12,4.20" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="573.44,1020.78;586.16,813.01;598.88,602.06;611.60,356.13;615.84,97.48;617.96,1.02" z_order="0">
+    </polyline>
+  </image>
+  <image id="48" name="IMG_2579.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="422.92,1020.78;410.19,857.53;404.89,721.85;400.65,540.58;397.47,384.75;399.59,205.61;410.19,2.08" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="517.26,997.46;513.02,813.01;506.66,626.44;505.60,411.25;503.48,176.99;507.72,1.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="624.32,1018.66;624.32,904.17;624.32,740.93;619.02,541.64;619.02,322.21;609.48,2.08" z_order="0">
+    </polyline>
+  </image>
+  <image id="49" name="IMG_2580.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="425.04,1020.78;437.76,968.84;440.94,903.11;443.06,772.73;438.82,663.54;422.92,503.48;395.35,274.51;373.09,162.14;343.41,1.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="502.42,1003.82;523.62,914.77;533.16,804.53;528.92,641.28;524.68,505.60;510.90,390.05;486.52,223.63;461.08,87.94;438.82,7.38" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="573.44,986.86;598.88,944.46;615.84,856.47;623.26,763.19;626.44,667.78;623.26,534.22;613.72,404.89;602.06,316.91;588.28,216.21;574.50,125.04;542.70,9.50" z_order="0">
+    </polyline>
+  </image>
+  <image id="50" name="IMG_2581.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="552.24,1.02;506.66,161.08;480.16,342.35;471.68,520.44;481.22,728.21;496.06,857.53;522.56,974.14;537.40,999.58" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="484.40,1022.90;437.76,941.28;407.01,823.61;392.17,695.35;383.69,528.92;392.17,382.63;398.53,289.35;421.86,135.64;461.08,39.18;471.68,5.26" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="391.10,0.00;358.25,85.82;329.63,200.31;312.67,322.21;302.07,456.84;307.37,643.40;316.91,765.31;351.89,890.39;377.33,945.52;429.28,1015.48" z_order="0">
+    </polyline>
+  </image>
+  <image id="51" name="IMG_2583.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="409.13,1018.66;384.75,744.11;380.51,497.12;377.33,287.23;384.75,8.44" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="475.92,8.44;473.80,658.24;489.70,1017.60" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="572.38,1019.72;567.08,633.86;569.20,281.93;566.02,7.38" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="652.94,3.14;659.30,306.31;662.48,735.63;661.42,917.95;658.24,1019.72" z_order="0">
+    </polyline>
+  </image>
+  <image id="52" name="IMG_2584.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="383.69,1019.72;412.31,955.06;440.94,871.31;464.26,775.91;484.40,635.98;498.18,486.52;500.30,307.37;490.76,145.18;469.56,26.46;458.96,2.08" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="533.16,2.08;551.18,94.30;566.02,191.83;576.62,298.89;576.62,405.95;568.14,566.02;545.88,719.73;521.50,836.33;488.64,952.94;452.60,1017.60" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="508.78,1022.90;562.84,939.16;589.34,854.35;615.84,732.45;641.28,585.10;650.82,461.08;650.82,361.43;650.82,274.51;640.22,178.05;621.14,70.98;602.06,1.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="661.42,5.26;686.87,99.60;711.25,208.79;716.55,302.07;718.67,443.06;714.43,549.06;682.63,753.65;658.24,851.17;620.08,934.92;593.58,985.80;563.90,1021.84" z_order="0">
+    </polyline>
+  </image>
+  <image id="53" name="IMG_2585.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="551.28,1022.73;523.03,899.48;494.79,709.46;487.08,539.98;503.78,311.44;525.60,168.93;557.70,2.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="481.95,1020.17;462.69,941.85;444.72,836.57;421.60,699.19;419.04,600.33;417.75,437.27;428.02,314.01;437.01,227.99;461.41,94.46;489.65,7.16" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="428.02,1020.17;385.65,934.14;347.14,760.82;331.73,561.81;340.72,360.23;367.68,165.08;381.80,98.31;404.91,34.12;419.04,9.72" z_order="0">
+    </polyline>
+  </image>
+  <image id="54" name="IMG_2586.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="410.05,1016.32;383.09,740.27;371.53,366.65;370.25,70.07;375.38,4.59" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="472.96,0.74;467.83,210.01;484.52,918.74;487.08,1018.88" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="552.56,1020.17;564.12,776.22;561.55,597.76;562.84,289.62;562.84,4.59" z_order="0">
+    </polyline>
+  </image>
+  <image id="55" name="IMG_2588.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="368.96,4.59;345.85,210.01;338.15,462.95;339.43,681.21;344.57,821.16;352.27,1017.60" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="447.28,1009.90;437.01,601.61;438.30,220.29;444.72,9.72" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="511.48,0.00;512.76,1000.91" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="605.21,1015.03;603.92,554.11;598.79,297.32;594.93,3.30" z_order="0">
+    </polyline>
+  </image>
+  <image id="56" name="IMG_2589.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="510.20,1015.03;516.61,882.79;505.06,649.12;476.81,441.12;443.43,288.33;403.63,136.83;366.40,4.59" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="452.57,0.00;492.22,141.97;533.31,289.62;561.55,432.13;584.66,582.35;600.07,778.79;596.22,950.84;585.95,1016.32" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="636.02,1024.00;650.14,948.27;656.56,869.95;660.41,781.36;659.13,714.59;641.15,498.90;616.76,382.06;594.93,269.08;565.40,154.81;547.43,86.76;520.47,5.87" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="593.86,0.00;637.30,113.72;678.39,263.94;713.05,461.66;725.89,591.34;733.60,742.84;724.61,889.21;705.35,979.08;697.65,998.34;691.23,1012.46;688.66,1016.32" z_order="0">
+    </polyline>
+  </image>
+  <image id="57" name="IMG_2590.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="327.88,1020.17;317.61,977.80;309.90,894.34;306.05,789.06;309.90,646.55;326.59,511.74;352.27,343.54;394.64,176.63;416.47,104.73;460.12,0.74" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="277.81,1016.32;266.25,961.11;252.13,882.79;240.57,772.37;246.99,660.67;263.68,541.27;275.24,438.55;298.35,323.00;320.18,217.72;353.56,109.87;386.94,37.97;406.20,2.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="227.32,1024.00;198.20,931.58;184.08,846.84;173.81,703.04;185.36,579.78;184.08,497.61;209.76,344.83;227.73,252.38;270.10,136.83;291.93,71.35;320.18,14.86" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="541.01,5.87;499.92,97.03;484.52,163.79;460.12,238.26;424.17,410.31;404.91,551.54;385.65,705.61;380.52,863.53;386.94,954.69;397.21,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="58" name="IMG_2591.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="392.01,1024.00;379.24,746.69;372.82,414.16;390.79,5.87" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="476.80,0.00;463.97,602.89;472.96,1021.45" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="543.58,1020.17;541.01,438.55;550.47,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="630.88,1024.00;636.02,560.52;637.30,198.46;637.30,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="59" name="IMG_2593.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="574.39,1024.00;593.65,891.78;597.50,609.31;605.21,348.68;607.70,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="471.68,1020.17;474.25,650.40;483.23,297.32;492.17,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="363.83,1022.73;350.99,749.26;353.56,317.86;361.26,120.14;376.44,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="60" name="IMG_2594.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="573.11,1016.32;593.65,876.37;578.24,646.55;542.29,430.85;496.07,212.58;458.84,91.89;424.17,0.74" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="651.43,994.49;683.52,893.06;693.80,785.21;688.66,649.12;666.83,477.07;641.15,298.61;611.62,180.48;562.84,32.83;553.85,12.29" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="732.31,957.26;775.97,867.38;787.52,760.82;787.52,652.97;778.53,504.03;769.55,382.06;736.16,215.15;706.63,116.29;674.54,28.98;661.25,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="61" name="IMG_2595.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="516.49,1018.50;489.52,950.45;472.83,841.32;468.98,596.09;501.08,343.16;534.46,126.18;573.97,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="463.97,4.59;430.59,103.45;401.06,270.36;381.80,441.12;363.83,624.72;371.53,763.38;385.65,875.08;397.21,938.00;435.73,1003.48" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="357.41,979.08;316.32,932.86;290.64,835.28;263.68,690.20;263.68,575.93;267.53,469.37;286.79,306.31;291.93,247.25;312.47,163.79;334.30,84.19;358.69,4.59" z_order="0">
+    </polyline>
+  </image>
+  <image id="62" name="IMG_2596.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="410.05,1006.04;395.93,944.42;377.95,719.73;366.40,396.18;365.11,190.76;372.82,4.59" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="484.32,0.00;479.38,204.88;480.66,520.72;488.37,721.01;493.50,995.77" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="580.81,988.07;591.08,869.95;593.65,660.67;597.50,296.04;596.22,93.18;589.13,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="63" name="IMG_2598.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="466.54,1024.00;462.69,744.13;466.54,457.81;478.10,39.25;480.84,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="578.19,0.00;576.96,376.92;561.55,738.99;553.85,1006.04" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="630.88,1018.88;657.85,808.32;666.83,631.14;673.25,269.08;670.74,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="64" name="IMG_2599.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="423.81,0.00;470.39,120.14;507.63,251.10;552.56,421.86;571.82,551.54;591.08,687.63;596.22,819.88;589.80,905.90;575.67,953.40;565.40,979.08" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="634.74,955.97;660.41,903.33;675.82,790.35;674.54,676.08;664.27,532.28;643.72,420.58;610.34,263.94;564.12,112.44;519.18,12.29" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="596.22,3.30;647.57,115.00;684.81,240.83;716.91,380.78;736.16,477.07;745.15,583.64;749.00,710.74;741.30,803.19;725.89,877.65;698.93,925.16" z_order="0">
+    </polyline>
+  </image>
+  <image id="65" name="IMG_2600.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="399.78,1018.88;402.35,921.31;412.62,786.49;431.88,624.72;457.55,475.79;494.66,315.30;535.23,143.64;588.90,4.97" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="500.15,0.00;442.81,152.91;383.65,374.77;352.22,539.32;328.18,733.45;317.09,851.77;317.09,927.58;328.00,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="250.53,1018.17;228.34,903.54;230.19,746.39;246.83,598.48;272.72,459.82;305.99,313.76;348.52,165.85;379.95,69.71;420.03,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="66" name="IMG_2601.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="443.69,1017.73;457.81,221.70;466.63,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="573.44,0.00;574.65,269.20;563.09,728.85;556.70,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="645.26,1020.29;667.09,803.31;677.36,515.72;682.50,253.80;673.51,0.86" z_order="0">
+    </polyline>
+  </image>
+  <image id="67" name="IMG_2603.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="502.75,979.21;502.75,926.57;513.02,835.41;518.16,726.28;537.41,470.78;557.96,127.97;564.11,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="473.62,0.00;457.81,214.00;438.55,534.97;425.71,873.93;433.42,966.37" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="364.08,961.24;346.11,913.73;339.69,811.02;338.41,667.22;344.83,483.62;360.23,252.51;378.10,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="68" name="IMG_2604.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="461.78,0.00;498.90,127.97;538.70,273.06;560.52,414.29;579.78,554.23;583.64,689.04;584.92,796.89;578.50,895.76;563.09,972.79;539.98,1019.01" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="601.61,1017.73;632.42,957.38;658.10,868.79;664.52,802.03;672.23,665.93;665.81,567.07;654.25,428.41;636.28,311.57;613.17,198.59;577.22,84.32;548.27,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="659.39,999.75;695.34,957.38;721.01,889.34;745.41,790.47;751.83,692.90;751.83,615.86;749.26,510.58;735.14,371.92;721.01,284.61;690.20,171.63;669.66,89.45;641.41,35.53;627.39,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="69" name="IMG_2605.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="369.22,1015.16;387.20,864.94;428.28,605.59;479.64,393.74;530.99,199.87;581.07,66.34;606.72,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="283.20,1020.29;284.48,920.15;297.32,785.34;321.72,631.27;397.47,305.15;448.82,153.65;473.22,86.89;514.25,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="194.61,1024.00;194.61,929.14;206.16,735.27;240.83,533.69;281.91,359.08;331.99,194.74;384.63,62.49;421.61,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="70" name="IMG_2606.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="476.99,0.00;474.50,350.09;460.38,1010.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="371.79,1019.01;371.79,601.74;385.72,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="293.74,0.00;275.49,284.61;267.79,642.82;278.06,895.76;298.18,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="71" name="IMG_2608.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="377.82,1024.00;344.83,682.63;347.39,393.74;356.38,221.70;377.13,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="471.90,0.00;464.23,203.72;465.51,496.46;462.95,733.98;478.35,1019.01" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="579.78,1022.86;581.07,848.25;577.22,405.30;579.65,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="72" name="IMG_2609.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="344.15,0.00;383.34,115.13;416.73,344.95;438.55,481.05;450.11,659.51;450.11,826.42;447.54,941.98;437.27,1022.86" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="533.56,1017.73;546.40,956.10;560.52,799.46;554.11,647.96;543.83,452.80;519.44,278.19;491.19,142.10;475.79,70.20;442.21,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="556.69,0.00;590.05,138.24;620.87,292.31;651.68,487.47;667.09,610.73;664.52,746.82;655.53,872.65;637.56,966.37;619.55,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="73" name="IMG_2610.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="461.66,1020.29;438.55,941.98;427.00,832.84;424.43,703.17;433.42,543.96;453.96,375.77;484.77,231.97;518.16,121.55;563.27,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="468.56,0.00;425.71,90.74;383.34,246.09;349.96,423.27;331.99,588.90;324.28,691.61;329.42,837.98;357.67,957.38;388.48,1010.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="337.12,1010.03;290.90,967.66;257.52,893.19;244.68,798.18;233.13,650.53;238.26,555.52;253.67,409.15;280.63,264.07;312.73,157.50;344.83,72.76;379.95,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="74" name="IMG_2611.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="373.97,1018.50;370.12,579.40;379.11,349.58;398.37,81.24;413.54,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="516.15,0.00;491.19,500.31;471.45,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="581.16,1024.00;590.05,849.53;599.04,599.17;606.75,388.61;622.15,4.72" z_order="0">
+    </polyline>
+  </image>
+  <image id="75" name="IMG_2613.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="421.38,0.00;403.89,194.74;407.74,663.37;418.01,1019.01" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="527.14,1024.00;518.16,559.37;516.87,124.12;519.01,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="614.14,0.00;620.87,117.70;629.86,392.46;632.42,668.50;631.14,826.42;631.14,943.26;629.02,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="76" name="IMG_2614.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="329.60,1024.00;352.53,961.24;371.79,834.13;387.20,678.77;393.62,519.57;391.05,366.78;378.21,214.00;365.37,99.73;344.08,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="430.71,0.00;448.82,52.22;462.95,138.24;478.35,238.39;488.63,352.66;493.76,496.46;489.91,626.13;479.64,748.11;470.65,834.13;452.68,917.58;430.85,984.35;408.54,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="500.18,1017.73;527.14,950.96;555.39,855.95;570.80,769.93;579.78,683.91;588.77,573.49;592.62,443.82;584.92,343.67;574.65,217.85;557.96,140.81;542.55,75.33;527.14,27.83;510.83,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="77" name="IMG_2615.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="469.37,1015.16;442.40,947.11;421.86,845.68;414.16,745.54;420.58,610.73;442.40,428.41;468.08,284.61;502.75,160.07;547.69,35.53;574.86,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="401.32,993.33;374.36,954.82;353.81,900.89;335.84,811.02;325.57,719.86;326.85,595.32;339.69,488.75;352.53,386.04;365.37,316.71;385.91,242.24;414.16,139.53;439.84,63.78;462.95,11.14" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="331.99,967.65;298.61,922.72;272.93,873.93;248.53,786.62;249.82,732.70;244.68,637.69;244.68,542.68;256.24,442.53;265.22,357.79;293.47,235.82;324.28,144.66;348.68,80.47;373.07,32.96;394.20,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="78" name="IMG_2616.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="377.64,-0.00;365.37,316.71;365.37,686.48;366.65,839.26;382.06,988.20" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="459.09,986.91;466.80,826.42;473.22,600.45;478.35,400.16;484.45,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="588.93,0.00;591.34,339.82;577.22,609.44;573.36,794.33;551.54,962.52;545.12,986.91" z_order="0">
+    </polyline>
+  </image>
+  <image id="79" name="IMG_2618.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="443.69,1022.86;424.43,870.08;401.32,556.80;396.18,323.13;413.45,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="519.12,0.00;513.02,380.90;516.87,674.92;534.85,912.45;544.23,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="639.83,1024.00;624.72,754.52;613.17,404.02;615.73,185.75;614.58,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="80" name="IMG_2619.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="542.26,0.00;552.82,79.18;577.22,196.02;601.61,323.13;608.03,473.35;609.31,664.65;602.89,803.31;588.77,897.04;566.94,963.80;548.97,997.19" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="609.31,986.91;633.71,963.80;659.39,904.74;691.48,789.19;706.89,610.73;704.32,473.35;694.05,301.30;674.79,201.16;649.12,88.17;626.83,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="703.18,0.00;726.15,68.91;751.83,178.05;764.67,261.50;777.51,348.81;787.78,475.91;781.36,653.10;774.94,730.13;759.53,805.88;736.42,876.50;712.03,930.42;690.20,950.96;669.66,974.07" z_order="0">
+    </polyline>
+  </image>
+  <image id="81" name="IMG_2620.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="587.49,1017.73;554.11,972.79;524.57,894.47;488.63,755.81;469.37,633.84;465.51,473.35;468.08,249.94;479.64,147.23;492.48,74.05;507.72,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="421.29,0.00;402.60,83.04;385.91,219.13;379.49,341.10;380.78,430.98;382.06,537.54;391.05,633.84;414.16,800.75;433.42,857.24;471.93,948.40;518.16,1007.46" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="451.39,1013.88;403.89,972.79;379.49,932.99;348.68,868.79;316.58,728.85;302.46,631.27;289.62,519.57;284.48,425.84;292.19,289.75;296.04,199.87;314.01,113.85;346.07,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="82" name="IMG_2621.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="482.05,0.00;477.07,437.40;488.63,714.72;514.19,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="597.76,1017.73;584.92,533.69;583.64,292.31;581.52,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="667.49,0.00;669.66,240.96;678.65,549.10;674.98,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="83" name="IMG_2623.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="501.46,962.52;475.79,740.40;448.82,383.47;420.50,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="498.69,0.00;504.03,56.07;519.44,196.02;537.41,434.83;551.54,614.58;560.52,778.92;565.66,962.52" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="628.57,957.38;632.42,903.46;633.71,834.13;631.14,709.59;628.57,656.95;624.72,543.96;617.02,442.53;608.03,329.55;599.04,228.12;584.92,112.57;574.65,38.10;566.57,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="84" name="IMG_2624.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="601.05,0.00;618.30,71.48;628.57,167.77;636.28,305.15;636.28,424.56;624.34,514.18;615.86,606.36;596.86,740.92;559.75,855.44;538.44,909.49;507.76,961.49;474.89,988.97" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="548.00,985.80;579.80,958.24;601.00,923.25;629.62,863.89;649.76,801.35;678.39,704.89;698.53,595.70;709.13,509.84;717.61,381.57;716.55,259.67;707.01,160.02;693.23,76.28;669.90,3.14" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="728.11,-0.00;749.52,48.75;770.06,124.51;780.33,234.92;786.75,345.34;782.90,495.56;766.21,609.83;752.09,694.57;734.11,760.05;708.43,831.95;684.04,885.87;662.21,919.25;640.38,944.93;618.56,970.61;603.15,975.74" z_order="0">
+    </polyline>
+  </image>
+  <image id="85" name="IMG_2625.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="595.45,1020.68;582.61,986.02;572.34,933.37;562.07,824.24;554.36,679.16;558.21,559.75;569.77,430.08;580.04,331.22;596.73,227.22;617.27,132.21;640.38,64.16;657.08,25.64;680.49,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="615.71,-0.00;580.04,48.75;535.10,186.13;499.15,369.73;488.88,512.25;482.46,607.26;481.18,758.76;488.88,837.08;500.44,911.55;510.71,978.31;529.23,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="465.52,1024.00;446.51,983.45;423.40,899.99;414.41,829.38;404.14,763.90;402.86,661.18;406.71,558.47;414.41,435.21;420.83,373.59;446.51,222.08;486.31,103.96;520.98,34.63;541.52,14.09;563.66,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="86" name="IMG_2626.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="496.76,0.00;478.61,105.25;461.92,451.91;467.06,639.36;476.04,851.20;497.87,991.15" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="560.78,987.30;547.94,815.25;546.66,478.87;555.39,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="614.75,0.00;618.56,550.77;618.56,910.26;614.71,998.85" z_order="0">
+    </polyline>
+  </image>
+  <image id="87" name="IMG_2628.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="490.17,997.57;465.77,923.10;452.93,804.98;436.24,575.16;427.25,251.61;434.41,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="536.31,0.00;533.82,413.39;546.66,727.95;567.20,1000.14" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="649.37,988.58;651.94,765.18;651.94,449.34;639.70,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="88" name="IMG_2629.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="448.17,0.00;473.47,98.83;496.59,265.74;504.29,409.54;508.14,566.17;501.72,730.52;485.03,837.08;461.92,906.41;446.51,935.94;425.97,959.05" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="501.72,939.79;528.68,916.68;544.09,883.30;567.20,815.25;583.89,725.38;600.58,573.88;607.00,406.97;600.58,324.80;587.74,216.95;563.35,83.42;542.80,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="630.55,0.00;650.66,60.31;677.62,196.41;690.46,322.23;699.44,451.91;689.17,596.99;678.90,693.28;671.20,762.61;655.79,804.98;637.82,847.35;623.69,875.60;607.00,898.71;591.60,915.40;574.90,926.96" z_order="0">
+    </polyline>
+  </image>
+  <image id="89" name="IMG_2630.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="551.79,948.78;523.55,921.82;495.30,885.87;474.76,806.27;456.78,712.54;449.08,626.52;443.94,539.21;450.36,462.18;451.65,358.18;468.34,259.32;485.03,163.02;501.72,102.68;514.60,39.80;534.40,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="440.55,0.00;416.98,57.74;392.59,160.46;375.90,270.87;361.77,388.99;354.07,507.11;360.49,631.65;377.18,735.65;395.16,811.40;414.41,858.91;443.94,898.71;470.91,925.67;486.31,932.09" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="406.71,911.55;368.19,874.31;336.10,826.81;302.71,740.79;277.04,593.14;273.18,487.85;277.04,388.99;288.59,263.17;302.71,172.01;325.82,97.54;336.10,44.90;365.33,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="90" name="IMG_2631.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="377.13,0.00;375.90,387.71;392.59,653.48;399.01,770.32;415.70,866.61;423.40,889.72" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="497.87,889.72;491.45,702.27;485.03,440.35;483.83,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="590.31,0.00;590.31,323.51;590.31,575.16;583.89,816.54;574.90,893.57" z_order="0">
+    </polyline>
+  </image>
+  <image id="91" name="IMG_2633.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="354.98,0.00;342.52,254.18;337.38,508.40;342.52,796.00;346.37,883.30;351.50,970.61;356.64,1011.69" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="437.53,1020.68;437.53,830.66;434.96,534.08;440.09,304.25;448.82,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="542.37,0.00;537.67,166.88;535.10,471.16;528.68,683.01;528.68,815.25;516.55,1024.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="92" name="IMG_2634.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="427.25,1021.96;454.22,955.20;465.77,876.88;467.06,699.70;458.07,577.73;442.66,446.77;420.83,310.67;397.70,188.70;365.60,74.40;336.10,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="427.80,0.00;450.36,65.45;492.73,209.24;511.99,317.09;528.68,430.08;544.09,559.75;551.79,665.04;547.94,790.86;542.81,864.04;523.55,947.50;510.71,979.60;490.17,1011.69" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="558.21,989.87;585.18,948.78;605.72,884.59;630.11,779.30;631.40,632.94;626.26,498.13;613.42,405.68;596.73,305.54;577.47,207.96;554.36,109.10;536.39,55.17;515.92,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="93" name="IMG_2635.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="555.44,-0.00;514.56,114.23;470.91,278.58;446.51,409.54;416.98,621.38;411.85,706.12;409.28,831.95;418.27,911.55;429.82,960.34;452.93,998.85" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="384.88,971.89;354.07,928.24;334.81,848.64;329.68,738.22;338.66,577.73;360.49,385.14;387.45,287.56;413.13,175.86;438.81,83.42;467.27,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="383.43,0.00;346.37,98.83;307.85,225.94;277.04,367.17;261.63,495.56;247.51,618.81;250.07,716.39;270.62,853.77;286.02,902.56;305.28,933.37;318.12,950.07" z_order="0">
+    </polyline>
+  </image>
+  <image id="94" name="IMG_2636.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="358.59,0.00;348.93,141.20;354.07,291.42;373.33,784.44;382.32,888.44;406.71,975.74" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="469.62,955.20;455.50,781.87;447.80,487.85;447.80,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="544.91,0.00;538.95,232.36;537.67,448.05;538.95,676.59;537.67,871.75;535.10,941.08" z_order="0">
+    </polyline>
+  </image>
+  <image id="95" name="IMG_2638.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="428.54,1019.40;415.70,910.26;405.43,697.13;402.86,516.10;409.28,204.11;422.12,3.82" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="515.66,0.00;504.29,468.60;509.42,797.28;516.00,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="611.07,1024.00;613.42,789.58;612.14,377.44;612.14,187.42;604.73,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="96" name="IMG_2639.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="370.90,0.00;411.85,85.99;454.22,223.37;490.17,400.55;513.28,548.20;520.98,697.13;520.98,802.41;515.84,902.56;500.44,953.92;473.06,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="537.67,1023.25;565.92,973.18;583.89,917.97;609.57,798.56;609.57,694.57;609.57,548.20;592.88,436.50;572.34,328.65;531.25,172.01;504.29,93.69;474.76,33.35;451.33,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="529.13,0.00;568.48,59.03;604.43,145.05;653.22,278.58;673.77,424.94;693.03,570.03;689.17,713.82;681.47,829.38;655.79,921.82;635.25,969.32;617.27,993.72;586.46,1015.55" z_order="0">
+    </polyline>
+  </image>
+  <image id="97" name="IMG_2640.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="512.67,0.00;476.04,100.11;451.65,241.34;424.69,381.29;415.70,518.67;411.85,620.10;414.41,730.52;425.07,807.81;442.02,884.07;456.91,944.54;483.36,987.94;503.52,1011.31" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="434.58,992.16;399.59,962.48;365.67,902.05;348.71,840.57;329.63,733.51;323.27,623.26;326.45,466.38;330.69,372.03;347.65,249.07;383.69,113.38;407.01,47.66;427.16,1.02" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="335.57,961.40;300.57,904.87;262.89,807.97;241.36,690.88;235.97,584.56;237.32,471.50;246.74,375.94;265.58,240.01;292.50,126.96;312.69,69.08;347.23,0.00" z_order="0">
+    </polyline>
+  </image>
+  <image id="98" name="IMG_2641.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="569.64,0.00;567.06,283.08;554.95,688.19;541.49,933.14" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="464.77,937.18;456.70,748.75;458.04,499.76;466.12,245.39;470.95,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="362.30,0.00;358.45,301.92;353.06,587.25;362.49,767.60;374.60,884.69;386.71,935.83" z_order="0">
+    </polyline>
+  </image>
+  <image id="99" name="IMG_2643.png" width="1024" height="1024">
+    <polyline label="Threads" source="manual" occluded="0" points="434.65,1024.00;419.01,755.48;417.67,414.97;423.05,175.41;429.59,0.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="538.80,-0.00;538.80,227.90;537.45,462.08;538.80,799.90;544.82,1024.00" z_order="0">
+    </polyline>
+    <polyline label="Threads" source="manual" occluded="0" points="633.34,1024.00;642.43,785.09;645.12,316.73;641.14,0.00" z_order="0">
+    </polyline>
+  </image>
+</annotations>
